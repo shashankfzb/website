@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otoddy - You Own the Car. We Handle the Drive.</title>
+    <meta name="description" content="Trusted hourly drivers for urban professionals. When you're too tired to drive, Otoddy connects you with verified drivers. Set your own fare, choose your driver." />
+    <meta property="og:title" content="Otoddy - Premium Hourly Driver Service" />
+    <meta property="og:description" content="You Own the Car. We Handle the Drive. Trusted, verified drivers when you need them most." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+        .hero-3d {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+        
+        .logo-3d {
+            animation: rotate3d 8s ease-in-out infinite;
+            transform-style: preserve-3d;
+        }
+        
+        @keyframes rotate3d {
+            0%, 100% { transform: rotateY(0deg) rotateX(0deg); }
+            25% { transform: rotateY(90deg) rotateX(10deg); }
+            50% { transform: rotateY(180deg) rotateX(0deg); }
+            75% { transform: rotateY(270deg) rotateX(-10deg); }
+        }
+        
+        .text-stagger {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUpStagger 0.8s ease-out forwards;
+        }
+        
+        .text-stagger:nth-child(1) { animation-delay: 0.2s; }
+        .text-stagger:nth-child(2) { animation-delay: 0.4s; }
+        .text-stagger:nth-child(3) { animation-delay: 0.6s; }
+        
+        @keyframes slideUpStagger {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .floating-card {
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .floating-card:nth-child(2) { animation-delay: -1s; }
+        .floating-card:nth-child(3) { animation-delay: -2s; }
+        
+        .feature-3d {
+            transform: perspective(1000px) rotateX(5deg);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-3d:hover {
+            transform: perspective(1000px) rotateX(0deg) translateY(-10px);
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fotoddyhom5744back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="font-inter bg-background text-text-primary">
+    <!-- Glassmorphic Navigation -->
+    <nav class="glass-nav fixed top-0 left-0 right-0 z-50 transition-all duration-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                
+             <div class="flex items-center">
+    <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+        <img src="../public/LOGO.png" alt="Otoddy Logo" class="w-8 h-8 object-contain" />
+    </div>
+    <span class="ml-3 text-xl font-poppins font-bold text-white">Otoddy</span>
+</div>
+
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-white hover:text-secondary transition-colors duration-300">Home</a>
+                    <a href="about_story.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Our Story</a>
+                    <a href="app_features.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Features</a>
+                    <a href="help_support.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Support</a>
+                    <a href="Terms.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Terms & Conditions </a>
+                    <a href="driver_application.html" class="bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-colors duration-300">Drive with Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-white hover:text-secondary transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Elements -->
+    <section class="hero-3d min-h-screen bg-hero-gradient relative overflow-hidden flex items-center">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-32 h-32 bg-secondary/20 rounded-full blur-xl animate-float"></div>
+            <div class="absolute bottom-20 right-10 w-48 h-48 bg-accent/20 rounded-full blur-xl animate-float" style="animation-delay: -2s;"></div>
+            <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-primary-300/20 rounded-full blur-xl animate-float" style="animation-delay: -1s;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left">
+                    <!-- 3D Rotating Logo -->
+                    <div class="logo-3d w-20 h-20 mx-auto lg:mx-0 mb-8 bg-gradient-to-br from-secondary to-accent rounded-2xl flex items-center justify-center shadow-glass-lg">
+    <img src="../public/LOGO.png" alt="Otoddy Logo" class="w-12 h-12 object-contain" />
+</div>
+
+                    
+                    <!-- Staggered Text Animation -->
+                    <h1 class="text-4xl md:text-6xl font-poppins font-bold text-white mb-6">
+                        <div class="text-stagger">Your Trusted Driver</div>
+                        <div class="text-stagger text-secondary">Just Tap Away</div>
+                        
+                    </h1>
+                    
+                    <p class="text-stagger text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Trusted hourly drivers for urban professionals. When you're too tired to drive, we connect you with verified drivers. Set your own fare, choose your driver.
+                    </p>
+                    
+                    <!-- Adaptive CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="app_features.html" class="btn-primary bg-secondary hover:bg-secondary-600 px-8 py-4 text-lg font-semibold rounded-xl shadow-glass-lg transform hover:scale-105 transition-all duration-300">
+                            <span class="flex items-center justify-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.5 3H6.5C5.67 3 5 3.67 5 4.5V19.5C5 20.33 5.67 21 6.5 21H17.5C18.33 21 19 20.33 19 19.5V4.5C19 3.67 18.33 3 17.5 3ZM17 18H7V6H17V18Z"/>
+                                </svg>
+                                Download App
+                            </span>
+                        </a>
+                        <a href="help_support.html" class="btn-secondary bg-accent hover:bg-accent-600 px-8 py-4 text-lg font-semibold rounded-xl shadow-glass transform hover:scale-105 transition-all duration-300">
+                            Learn About Safety
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual -->
+                <div class="relative">
+                    <div class="glass-card p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                        <img src="../public/oto.png" alt="Urban professional using Otoddy app" class="w-full h-80 object-cover rounded-xl" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Story Section with Parallax -->
+    <section class="parallax-bg py-20 relative" style="background-image: linear-gradient(rgba(26, 35, 126, 0.8), rgba(26, 35, 126, 0.8)), url('../public/bg.jpeg');">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="glass-card p-8 lg:p-12">
+                    <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white mb-6">
+                        Born from a Crisis Moment
+                    </h2>
+                    <p class="text-white/90 text-lg mb-6 leading-relaxed">
+                        It was 2 AM after a 14-hour workday. I was exhausted, sitting in my car, knowing I shouldn't drive but having no other option. That's when I realized - millions of urban professionals face this same dilemma every day.
+                    </p>
+                    <p class="text-white/90 text-lg mb-8 leading-relaxed">
+                        Otoddy was born from that moment of vulnerability. We believe car ownership shouldn't mean you always have to drive. Sometimes, the smartest choice is letting someone else take the wheel.
+                    </p>
+                    <a href="about_story.html" class="inline-flex items-center text-secondary hover:text-secondary-300 font-semibold transition-colors duration-300">
+                        Read Our Full Story
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="relative">
+                    <img src="../public/bg.jpeg" alt="Founder's story moment" class="w-full h-96 object-cover rounded-2xl shadow-glass-lg" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/20/22/automotive-1871104_1280.jpg'; this.onerror=null;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Driver Verification Showcase -->
+    <section class="py-20 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                    Safety First, Always
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Every Otoddy driver undergoes comprehensive verification. Your safety and peace of mind are our top priorities.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Floating Verification Cards -->
+                <div class="floating-card glass-card p-8 text-center feature-3d">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-semibold text-primary mb-4">Background Verified</h3>
+                    <p class="text-text-secondary">Comprehensive background checks, driving record verification, and identity confirmation for every driver.</p>
+                </div>
+                
+                <div class="floating-card glass-card p-8 text-center feature-3d">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-semibold text-primary mb-4">Insurance Protected</h3>
+                    <p class="text-text-secondary">Full insurance coverage during every ride, protecting both you and your vehicle with comprehensive policies.</p>
+                </div>
+                
+                <div class="floating-card glass-card p-8 text-center feature-3d">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-semibold text-primary mb-4">Real-Time Tracking</h3>
+                    <p class="text-text-secondary">Live GPS tracking, emergency contacts, and 24/7 support ensure you're always connected and safe.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive App Features -->
+    <section class="py-20 bg-gradient-to-br from-primary to-primary-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white mb-4">
+                    How Otoddy Works
+                </h2>
+                <p class="text-xl text-white/90 max-w-3xl mx-auto">
+                    Simple, transparent, and designed for your convenience. Set your fare, choose your driver, and relax.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="glass-card p-6 transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-poppins font-semibold text-white mb-2">Set Your Own Fare</h3>
+                                <p class="text-white/80">You decide what you're willing to pay. Drivers can accept or negotiate, giving you full control over pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-6 transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-accent rounded-xl flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-poppins font-semibold text-white mb-2">Choose Your Driver</h3>
+                                <p class="text-white/80">Browse verified driver profiles, read reviews, and select someone you trust to handle your car.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card p-6 transform hover:scale-105 transition-all duration-300">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <span class="text-white font-bold">3</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-poppins font-semibold text-white mb-2">Track & Relax</h3>
+                                <p class="text-white/80">Real-time GPS tracking, direct communication, and peace of mind throughout your journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="glass-card p-8">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Otoddy app interface" class="w-full h-96 object-cover rounded-xl" onerror="this.src='https://images.pixabay.com/photo/2016/12/09/11/33/smartphone-1894723_1280.jpg'; this.onerror=null;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Otoddy Works Section -->
+<section class="py-20 bg-background">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+                How Otoddy Works
+            </h2>
+            <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                A simple, flexible way to hire a trusted driver for your own car — launching soon.
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="glass-card overflow-hidden card-hover text-center p-6">
+                <div class="text-5xl mb-4">📱</div>
+                <h3 class="text-lg font-poppins font-semibold text-primary mb-2">Step 1: Open the App</h3>
+                <p class="text-text-secondary">
+                    Choose your pickup location, duration, and the hours you need a driver for.
+                </p>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="glass-card overflow-hidden card-hover text-center p-6">
+                <div class="text-5xl mb-4">👨‍✈️</div>
+                <h3 class="text-lg font-poppins font-semibold text-primary mb-2">Step 2: Select Your Driver</h3>
+                <p class="text-text-secondary">
+                    Browse verified drivers, check ratings, and pick the one you like.
+                </p>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="glass-card overflow-hidden card-hover text-center p-6">
+                <div class="text-5xl mb-4">🚗</div>
+                <h3 class="text-lg font-poppins font-semibold text-primary mb-2">Step 3: Enjoy the Ride</h3>
+                <p class="text-text-secondary">
+                    Sit back and relax while your chosen driver takes care of the road.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#waitlist" class="inline-block bg-primary text-white px-6 py-3 rounded-lg shadow-md hover:bg-primary-dark transition">
+                Join the Waitlist 🚀
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Progressive App Download CTA -->
+    <section class="py-20 bg-gradient-to-r from-secondary to-accent">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-poppins font-bold text-white mb-6">
+                Ready to Experience Otoddy?
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Join thousands of urban professionals who've already discovered the smarter way to get around. Download the app and book your first trusted driver today.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <a href="app_features.html" class="bg-white text-secondary px-8 py-4 rounded-xl font-poppins font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.5 3H6.5C5.67 3 5 3.67 5 4.5V19.5C5 20.33 5.67 21 6.5 21H17.5C18.33 21 19 20.33 19 19.5V4.5C19 3.67 18.33 3 17.5 3ZM17 18H7V6H17V18Z"/>
+                    </svg>
+                    Download for iOS
+                </a>
+                <a href="app_features.html" class="bg-white text-secondary px-8 py-4 rounded-xl font-poppins font-semibold hover:bg-gray-100 transition-colors duration-300 flex items-center">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.5 3H6.5C5.67 3 5 3.67 5 4.5V19.5C5 20.33 5.67 21 6.5 21H17.5C18.33 21 19 20.33 19 19.5V4.5C19 3.67 18.33 3 17.5 3ZM17 18H7V6H17V18Z"/>
+                    </svg>
+                    Download for Android
+                </a>
+            </div>
+            
+            <!-- Email Signup -->
+            <div class="glass-card p-6 max-w-md mx-auto">
+                <h3 class="text-lg font-poppins font-semibold text-white mb-4">Get Launch Updates</h3>
+                <form class="flex gap-2">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-lg border-0 focus:ring-2 focus:ring-white/50 outline-none" />
+                    <button type="submit" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-300 font-semibold">
+                        Notify Me
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                      <div class="flex items-center mb-4">
+                         <div class="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+        <img src="../public/LOGO.png" alt="Otoddy Logo" class="w-8 h-8 object-contain" />
+    </div>
+    <span class="ml-3 text-xl font-poppins font-bold text-white">Otoddy</span>
+</div>
+       
+                    <p class="text-white/80 mb-6 max-w-md">
+                        Empowering urban professionals with trusted hourly drivers. You own the car, we handle the drive.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about_story.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Our Story</a></li>
+                        <li><a href="app_features.html" class="text-white/80 hover:text-secondary transition-colors duration-300">App Features</a></li>
+                        <li><a href="help_support.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Safety & Trust</a></li>
+                        <li><a href="Terms.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Support -->
+                <div>
+                    <h4 class="font-poppins font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="help_support.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Help Center</a></li>
+                        <li><a href="help_support.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Contact Us</a></li>
+                        <li><a href="help_support.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Terms & Conditions</a></li>
+                        <li><a href="private.html" class="text-white/80 hover:text-secondary transition-colors duration-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-12 pt-8 text-center">
+                <p class="text-white/60">© 2025 Otoddy. All Rights Reserved. Made with ❤️ for urban professionals.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-secondary text-white rounded-full shadow-glass-lg opacity-0 invisible transition-all duration-300 hover:bg-secondary-600 z-40">
+        <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
+    <script>
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with scroll-reveal class
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.md\\:hidden button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'md:hidden absolute top-16 left-0 right-0 glass-nav border-t border-white/20 hidden';
+        mobileMenu.innerHTML = `
+            <div class="px-4 py-4 space-y-2">
+                <a href="homepage.html" class="block text-white hover:text-secondary transition-colors duration-300 py-2">Home</a>
+                <a href="about_story.html" class="block text-white/80 hover:text-secondary transition-colors duration-300 py-2">Our Story</a>
+                <a href="app_features.html" class="block text-white/80 hover:text-secondary transition-colors duration-300 py-2">Features</a>
+                <a href="help_support.html" class="block text-white/80 hover:text-secondary transition-colors duration-300 py-2">Support</a>
+                <a href="Terms.html" class="block text-white/80 hover:text-secondary transition-colors duration-300 py-2">Terms & Conditions</a>
+                <a href="driver_application.html" class="block bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-colors duration-300 mt-4">Drive with Us</a>
+            </div>
+        `;
+        
+        document.querySelector('nav').appendChild(mobileMenu);
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
